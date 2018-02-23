@@ -1,0 +1,40 @@
+body
+{
+  padding: 50px 10px 10px 50px;
+  background-color: brown;
+  background-image: url("Ocean.jpeg");
+  background-repeat: repeat;
+}
+
+p
+{
+  color: white;
+  font-family: arial;
+  font-size: 16pt;
+}
+
+a
+{
+  color:red;
+}
+
+a:hover
+{
+  color:green;
+}
+
+iframe
+{
+  margin:auto;
+  display: block;
+}
+
+div
+{
+  width:500px;
+  margin: auto;
+  padding: 50px 25px 50px 50px;
+  background-color: grey;
+  border:2px solid white;
+  border-radius: 10px;
+}

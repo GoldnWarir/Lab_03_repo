@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+  <script>
+    var image=1;
+    var pic;
+
+    function previous()
+    {
+      image=image-1;
+
+      if(image==0)
+      {
+        image=5;
+      }
+
+      set_image();
+
+    }
+
+    function next()
+    {
+      image=image+1;
+
+      if(image==6)
+      {
+        image=1;
+      }
+
+      set_image();
+    }
+
+    function set_image()
+    {
+          if(image==1)
+          {
+            pic = "scene1.png";
+          }
+          else if(image==2)
+          {
+            pic = "scene2.png";
+          }
+          else if(image==3)
+          {
+            pic = "scene3.png"
+          }
+          else if(image==4)
+          {
+            pic ="scene4.png";
+          }
+          else if(image==5)
+          {
+            pic ="scene5.jpg";
+          }
+      document.getElementById('Hero').src = pic;
+     }
+
+  </script>
+
+<img id="Hero" src="scene1.png" width="200" height="200">
+
+    <button type="button" onclick="previous()">Previous</button>
+    <button type="button" onclick="next()">Next</button>
+
+  </body>
+</html>

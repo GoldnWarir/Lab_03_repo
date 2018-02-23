@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+    <form>
+      Password:<br>
+      <input type="text" id="password">
+      <br>
+      Validate Password:<br>
+      <input type="text" id="secpassword">
+      <br>
+      <button type="button" onclick="password_validation()">Validate</button>
+    </form>
+
+      <script>
+      function password_validation()
+      {
+        var pass = document.getElementById("password");
+        var sec = document.getElementById("secpassword");
+
+        if(pass.value.length < 8)
+        {
+          alert("The password is not at least 8 characters long.");
+        }
+        else if (pass.value!==sec.value)
+        {
+          alert("The passwords do not match");
+        }
+        else if(pass.value===sec.value)
+        {
+          alert("The passwords match!");
+        }
+
+      }
+      </script>
+  </body>
+</html>
